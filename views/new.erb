@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> New Book </title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Add New Book</h1>
+    <form method="post" action="/books/create">
+      Title:
+      <label for="title"></label>
+      <input type="text" name="title" required>
+      <br>
+      Description:
+      <label for="description"></label>
+      <input type="text" name="description" required>
+      <br>
+      Year:
+      <label for="year"></label>
+      <input type="number" name="year" required>
+      <br>
+      Author:
+      <label for="author"></label>
+      <input type="text" name="author" required>
+      <br>
+      Number of pages:
+      <label for="pages"></label>
+      <input type="number" name="pages">
+      <br><br>
+      <input type="submit">
+    </form>
+      <br><br>
+    <a href="/">Home</a>
+    <a href="/books">Books</a>
+  </body>
+</html>

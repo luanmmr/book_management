@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Books!</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>My Books</h1>
+    <ul>
+      <% @books.each do |book| %>
+        <li><a href="/books/<%= book.id %>"><%= book.title %></a></li>
+      <% end %>
+    </ul>
+    <a href="/">Home</a>
+    <a href="/books/new">Add New Book</a>
+  </body>
+</html>

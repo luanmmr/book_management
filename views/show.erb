@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Show </title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <ul>
+      <li>ID: <%= @book.id %></li>
+      <li>Title: <%= @book.title %></li>
+      <li>Author: <%= @book.author %></li>
+      <li>Status: <%= @book.status %></li>
+      <li>Registration Date: <%= @book.registration_date %></li>
+      <li>Reading Start Date: <%= @book.reading_start_date %></li>
+      <li>Reading End Date: <%= @book.reading_end_date %></li>
+      <li>Number of Pages: <%= @book.pages %></li>
+    </ul>
+    <a href="/books/edit/<%= @book.id %>">
+      <button type="button">Edit</button>
+    </a>
+    <br>
+    <br>
+    <% if @book.reading_start_date %>
+    <h2>Page Comments</h2>
+    <form action="/books/comments/<%= @book.id %>" method="post">
+      <label for="page">Page:</label>
+      <select name="page" id="page">
+        <% 1.upto(@book.pages) do |page| %>
+          <option value="<%= page %>"><%= page %></option>
+        <% end %>
+      </select>
+      <br>
+      <label for="comment">Comment:</label><br>
+      <textarea id="comment" name="comment" rows="10" cols="50"></textarea>
+      <br>
+      <input type="submit" value="Send">
+    </form>
+    <% end %>
+    <br>
+    <a href="/">Home</a>
+    <a href="/books">Books</a>
+    <a href="/books/new">Add New Book</a>
+  </body>
+</html>

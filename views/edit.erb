@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title> Edit </title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Editing book <%= @book.title %></h1>
+    <form method="post" action="/books/update/<%= @book.id %>" >
+      <label for="title">Title:</label>
+      <input type="text" name="title" value="<%= @book.title %>">
+      <br>
+      <label for="description">Description:</label>
+      <input type="text" name="description" value="<%= @book.description %>">
+      <br>
+      <label for="year">Year:</label>
+      <input type="number" name="year" value="<%= @book.year %>">
+      <br>
+      <label for="author">Author:</label>
+      <input type="text" name="author" value="<%= @book.author %>">
+      <br>
+      <label for="pages">Number of Pages:</label>
+      <input type="text" name="pages" value="<%= @book.pages %>">
+      <br>
+      <label for="status">Status:</label>
+      <select name="status" id="status">
+        <% if @book.status == "not read" %>
+          <option value="not read">Not Read</option>
+        <% end %>
+      <option value="reading">Reading</option>
+      <option value="read">Read</option>
+      </select>
+      <input type="submit" value="Edit">
+    </form>
+  </body>
+</html>

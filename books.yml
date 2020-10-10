@@ -1,0 +1,21 @@
+---
+1: !ruby/object:Book
+  title: Use a Cabeça! Ruby
+  description: Ruby
+  year: 2016
+  author: Jay McGraven
+  status: reading
+  registration_date: 2020-10-09 21:12:20.941590525 -03:00
+  pages: 57
+  page_comments:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - meu teste
+  id: 1
+  reading_start_date: 2020-10-09 21:14:19.424561379 -03:00
