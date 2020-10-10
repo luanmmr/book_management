@@ -42,3 +42,8 @@ post('/books/comments/:id') do
   store.save_comment(params)
   redirect '/books'
 end
+
+get('/books/:id/comments') do
+  @book = store.find(params['id'].to_i)
+  erb :comments
+end

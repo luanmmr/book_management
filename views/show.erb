@@ -18,8 +18,11 @@
     <a href="/books/edit/<%= @book.id %>">
       <button type="button">Edit</button>
     </a>
-    <br>
-    <br>
+    <br><br>
+    <a href="/books/<%= @book.id %>/comments">
+      <button type="button">View Comments</button>
+    </a>
+    <br><br>
     <% if @book.reading_start_date %>
     <h2>Page Comments</h2>
     <form action="/books/comments/<%= @book.id %>" method="post">

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>Comments</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1><%= @book.title %> Comments</h1>
+    <br>
+    <% @book.page_comments.each_index do |page| %>
+      <% if @book.page_comments[page] %>
+        <h3>Page <%= page %></h3>
+        <p><%= @book.page_comments[page] %></p>
+        <br>
+      <% end %>
+    <% end %>
+    <br>
+    <a href="/">Home</a>
+    <a href="/books">Books</a>
+    <a href="/books/new">Add New Book</a>
+  </body>
+</html>
