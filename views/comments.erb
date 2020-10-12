@@ -6,11 +6,13 @@
   </head>
   <body>
     <h1><%= @book.title %> Comments</h1>
-    <br>
     <% @book.page_comments.each_index do |page| %>
       <% if @book.page_comments[page] %>
         <h3>Page <%= page %></h3>
         <p><%= @book.page_comments[page] %></p>
+        <a href="/books/<%= @book.id %>/comments/<%= page %>/edit">
+          <button type="button">Edit</button>
+        </a>
         <br>
       <% end %>
     <% end %>

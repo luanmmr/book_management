@@ -47,4 +47,11 @@ class BookStore
     end
   end
 
+  def update_comment(params)
+    @store.transaction do
+      @store[params['id'].to_i].set_comments(params['page'].to_i,
+                                             params['comment'])
+    end
+  end
+
 end

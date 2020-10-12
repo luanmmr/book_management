@@ -40,10 +40,20 @@ end
 
 post('/books/comments/:id') do
   store.save_comment(params)
-  redirect '/books'
+  redirect "/books/#{params['id']}/comments"
 end
 
 get('/books/:id/comments') do
   @book = store.find(params['id'].to_i)
   erb :comments
+end
+
+get('/books/:id/comments/:page/edit') do
+  @book = store.find(params['id'].to_i)
+  erb :edit_comment
+end
+
+post('/books/:id/comments/:page') do
+  store.update_comment(params)
+  redirect "books/#{params['id']}/comments"
 end
