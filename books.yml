@@ -2,19 +2,30 @@
 1: !ruby/object:Book
   title: Use a Cabeça! Ruby
   description: Ruby
-  year: 2016
-  author: Jay McGraven
+  year: 2015
+  author: '2015'
   status: reading
-  registration_date: 2020-10-11 22:27:32.753308663 -03:00
+  registration_date: 2020-10-11 23:06:43.121581620 -03:00
   pages: 30
   page_comments:
   - 
+  - " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis,
+    massa non facilisis egestas, ipsum diam volutpat magna, at pulvinar massa nibh
+    sed sapien. Praesent at condimentum nisl. Vivamus rutrum dolor porta velit pretium
+    blandit. Donec finibus augue quis neque viverra, convallis eleifend mi bibendum.
+    Etiam pellentesque efficitur mi a scelerisque. Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Vivamus ultricies viverra luctus. Praesent vestibulum magna nisl,
+    in convallis erat cursus vel. In hac habitasse platea dictumst. Nullam eu sodales
+    augue, vitae placerat sem. Mauris vitae consectetur nulla. Aenean euismod arcu
+    vitae purus vehicula efficitur. Integer elementum ligula at magna dignissim cursus.
+    Sed vel maximus tellus, quis dictum risus."
   - 
-  - fiquei no lugar
   - 
-  - "fiquei no lugar novamente\r\n      "
-  - Um novo teste
   - 
-  - Um novo teste de comentário
+  - 
+  - 
+  - 
+  - 
+  - aasss
   id: 1
-  reading_start_date: 2020-10-11 22:35:52.287165361 -03:00
+  reading_start_date: 2020-10-12 02:20:51.082009674 -03:00

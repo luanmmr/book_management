@@ -10,9 +10,7 @@
     <form action="/books/<%= @book.id %>/comments/<%= params['page'] %>"
       method="post">
       <label for="comment">Comment:</label><br>
-      <textarea id="comment" name="comment" rows="10" cols="50">
-        <%= @book.page_comments[params['page'].to_i] %>
-      </textarea>
+      <textarea id="comment" name="comment" rows="10" cols="50"><%= "#{@book.page_comments[params['page'].to_i]}" %></textarea>
       <br>
       <input type="submit" value="Edit">
     </form>

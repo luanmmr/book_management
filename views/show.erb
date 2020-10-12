@@ -29,7 +29,9 @@
         <label for="page">Page:</label>
         <select name="page" id="page">
           <% 1.upto(@book.pages) do |page| %>
-            <option value="<%= page %>"><%= page %></option>
+            <% unless @book.page_comments[page] %>
+                <option value="<%= page %>"><%= page %></option>
+            <% end %>
           <% end %>
         </select>
         <br>
